@@ -26,4 +26,75 @@ of the two center squares.
 
 There are many different algorithms you can use to solve this problem. The 
 interesting challenge is to come up with a strategy that works.
-*/
+*/  
+import"turns";
+ 
+function CenterOfEarth(){
+	while(noBeepersPresent()){
+		move();
+	if(frontIsBlocked()){
+		turnAround();
+		move();
+		putBeeper();
+		move();
+	}
+	if(beepersPresent()){
+		pickBeeper();
+		turnAround();
+		move();
+		putBeeper();
+		move();
+	
+if(facingEast()){
+if(beepersPresent()){	
+	pickBeeper();
+	turnAround();
+	move();
+}
+}
+if(facingWest()){
+if(beepersPresent()){
+	pickBeeper();
+	turnAround();
+	move();
+}
+}
+
+}
+}
+
+turnLeft();
+pickBeeper();
+    
+while(noBeepersPresent()){
+	move();
+if(frontIsBlocked()){
+	turnAround();
+	move();
+	putBeeper();
+	move();
+}
+if(beepersPresent()){
+	pickBeeper();
+	turnAround();
+	move();
+	putBeeper();
+	move();
+ 
+if(facingNorth()){
+if(beepersPresent()){	
+	pickBeeper();
+	turnAround();
+	move();
+}
+}
+if(facingSouth()){
+if(beepersPresent()){	
+	pickBeeper();
+	turnAround();
+	move();
+}
+}
+}
+}
+}    

@@ -1,4 +1,5 @@
 Dimension: (5, 5)
-Karel: (1, 1) EAST
+Beeper: (3, 3) 1
+Karel: (3, 3) NORTH
 BeeperBag: INFINITE
 Speed: 0.00
